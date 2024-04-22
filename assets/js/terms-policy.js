@@ -84,3 +84,10 @@ function toggleMenu(atn, ctn, wrapper){
         ctn.classList.remove('toggle-hidden');
     }
 }
+
+// ----------------automatic date update--------------
+var yearHtml = document.querySelector('.year');
+
+var date = new Date();
+var year = date.getFullYear();
+yearHtml.innerText = year;
